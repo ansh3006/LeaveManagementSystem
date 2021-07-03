@@ -60,7 +60,7 @@ void Employee::add_user(){
     cout<<"----------------------New User---------------------"<<endl;
     userdata.open("User_details.txt",ios::app | ios::in | ios::out);
     cout<<"Enter ID (Must be of 4 digits): "; cin>>id;
-    cout<<"Enter Name: "; cin.ignore(); getline(cin,name);  
+    cout<<"Enter First Name: "; cin.ignore(); getline(cin,name);  
     cout<<"Enter Age: "; cin>>age;
     cout<<"Enter Salary(In Rupees): "; cin>>sal;  
     cout<<endl<<"User added successfully!"<<endl;
@@ -180,7 +180,7 @@ int main(){
     while(out!=1){
         int choice,check=0;
         cout<<endl<<endl<<"-----------------------LEAVE MANAGEMENT SYSTEM----------------------"<<endl<<endl;
-        cout<<"1. Add User"<<endl<<"2. All Users"<<endl<<"3. Apply Leave"<<endl<<"4. Search Leave"<<endl<<"5. Delete Leave"<<endl<<"6. Display Leave"<<endl;
+        cout<<"1. Add User"<<endl<<"2. User Details"<<endl<<"3. Apply Leave"<<endl<<"4. Search Leave"<<endl<<"5. Delete Leave"<<endl<<"6. Display Leave"<<endl;
         cout<<"Choose the option: "<<endl;
         cin>>choice;
         Employee e;
